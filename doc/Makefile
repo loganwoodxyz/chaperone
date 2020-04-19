@@ -3,9 +3,15 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
+SPHINXBUILD   = $(shell which guix)
 PAPER         =
 BUILDDIR      = build
+
+ifeq ($(SPHINXBUILD),)
+SPHINXBUILD=sphinx-build
+else
+SPHINXBUILD=guix environment --pure --ad-hoc -m env.scm -- sphinx-build
+endif
 
 # Internal variables.
 PAPEROPT_a4     = -D latex_paper_size=a4
