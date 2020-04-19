@@ -92,7 +92,7 @@
   (license license:expat)))
 
 (define-public python-chaperone
-  (let ((commit "b3345827fdf754db3423814cedc0d4f55382a7d2")
+  (let ((commit "bd8711536cb24386332bd41bc97fdff38e6ee70a")
         (revision "0"))
   (package
    (name "python-chaperone")
@@ -104,7 +104,7 @@
                   (commit commit)))
            (sha256
             (base32
-             "0yaahragd8j3w674p9505zv943q000ik6fy7h1fgva7dxybashrv"))))
+             "0jmk1nrylg23zjkc7xrp03f0bc873qk4463xpf7zpyla3whkyh3w"))))
    (build-system python-build-system)
    (native-inputs
     `(
