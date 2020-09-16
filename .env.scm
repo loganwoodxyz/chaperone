@@ -1,0 +1,12 @@
+(specifications->manifest
+ '(
+   "bash"
+   "coreutils"
+   "gcc-toolchain"
+   "python"
+   "python-pytest"
+   "python-pyyaml"
+   "python-voluptuous"
+   "python-aiocron"
+   "python-setproctitle"
+   ))
