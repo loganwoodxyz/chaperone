@@ -1,0 +1,4 @@
+image: alpine/edge
+tasks:
+- install: |
+  pip install ./chaperone
