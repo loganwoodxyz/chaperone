@@ -3,6 +3,13 @@
 
 [![Gitter](https://badges.gitter.im/Join_Chat.svg)](https://gitter.im/garywiz/chaperone?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![PyPI version](https://badge.fury.io/py/chaperone.svg)](https://badge.fury.io/py/chaperone)
 
+---
+
+## NOTICE
+The following section is an exact copy of the original author's words. They are not the words of Logan Wood and should not be treated as such.
+
+---
+
 Chaperone is a lean init-style startup manager for Docker-like containers.  It runs as a single lightweight full-featured process which runs at the root of a docker container tree and provides all of the following functionality, plus much more:
 
 * Monitoring for all processes in the container, automatically shutting down the
@@ -52,10 +59,7 @@ system services (such as runit).  Chaperone is designed to be self-contained.
 Status
 ------
 
-Chaperone is now stable and ready for production.  If you are currently starting up your
-container services with Bash scripts, Chaperone is probably a much better choice. 
-
-Full status is [now part of the documentation](http://garywiz.github.io/chaperone/status.html).
+This fork of Chaperone has been modified from the original. This software does not feature any warranties and may not be production-ready. USE AT YOUR OWN RISK.
 
 Downloading and Installing
 --------------------------
@@ -63,10 +67,10 @@ Downloading and Installing
 The easiest way to install `chaperone`` is using ``pip`` from the https://pypi.python.org/pypi/chaperone package:
 
     # Ubuntu or debian prerequisites...
-    apt-get install python3-pip
+    apt-get install python3-pip git
 
     # chaperone installation (may be all you need)
-    pip3 install chaperone
+    python3 -m pip install git+https://github.com/loganwoodxyz/chaperone.git
 
 License
 -------
