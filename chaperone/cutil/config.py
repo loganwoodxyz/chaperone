@@ -512,7 +512,7 @@ class Configuration(object):
 
         for fn in args:
             if os.path.exists(fn):
-                self._merge(yaml.load(open(fn, 'r').read().expandtabs()))
+                self._merge(yaml.safe_load(open(fn, 'r').read().expandtabs()))
         
         if not self._conf and default:
             self._conf = lazydict(yaml.load(default))
