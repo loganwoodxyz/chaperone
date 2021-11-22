@@ -64,7 +64,7 @@ This fork of Chaperone has been modified from the original. This software does n
 Downloading and Installing
 --------------------------
 
-The easiest way to install `chaperone`` is using ``pip`` from the https://pypi.python.org/pypi/chaperone package:
+The easiest way to install `chaperone`` is using ``pip``:
 
     # Ubuntu or debian prerequisites...
     apt-get install python3-pip git
